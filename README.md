@@ -7,5 +7,5 @@ marp : true
 ### TechStack
 - HTML
 - CSS
-- Swiper JS
+- Swiper JS  [Click here](https://swiperjs.com/)
 - GSAP
