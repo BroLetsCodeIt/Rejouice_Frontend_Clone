@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+html , body{
+    width: 100%;
+    height: 100%;
+}
+
+.page1{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    /* background-color: red; */
+    
+}
+.page1 video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
