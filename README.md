@@ -8,4 +8,5 @@ marp : true
 - HTML
 - CSS
 - Swiper JS  [Click here](https://swiperjs.com/)
-- GSAP
+- GSAP [Click here](https://gsap.com/)
+- SheryJS  [Click here](https://www.npmjs.com/package/sheryjs)
