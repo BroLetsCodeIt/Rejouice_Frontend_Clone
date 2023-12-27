@@ -2,18 +2,20 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frontend Clone [Rejouice].</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Clone [Rejouice].®</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 </head>
 
 <body>
     <div id="main">
         <div class="page1">
             <div class="movingcursor">
-              <button>Play reel</button>
+                <button>Play reel</button>
             </div>
             <video autoplay loop muted>
                 <source src="./videos/back01.mp4" />
@@ -38,15 +40,115 @@
             </div>
         </div>
         <div class="page2">
-
+            <div class="page2-heading">
+                <div class="hleft">
+                    <h2>Full-service creative agency.</h2>
+                    <h2>Two engagement models.</h2>
+                </div>
+                <div class="hright">
+                    <h2>Paris San Diego</h2>
+                </div>
+            </div>
+            <div class="page2-content">
+                <h1>We are a digital brand accelerator. We</h1>
+                <h1>design , develop ,and scale market-defining</h1>
+                <h1>brands by unlocking their hidden potential.</h1>
+                <h1>Choose full cash compensation or offset up to</h1>
+                <h1>50% of our fees for equity in your company.</h1>
+                <h1>Your vision , your decision.</h1>
+            </div>
         </div>
         <div class="page3">
-
+            <div class="agency">
+                <h5>Agency & Venture <span> Models</span> ↴</h5>
+                <h1>Explore our services</h1>
+                <h1>& engagement models</h1>
+            </div>
         </div>
         <div class="page4">
-
+            <div class="page4-heading">
+                <h1>Transforming visions into brands.</h1>
+                <h1>↳ See the work</h1>
+            </div>
+            <div class="page4-videos">
+                <div class="video1 vid">
+                    <video autoplay muted loop>
+                        <source src="./videos/homework00.mp4" />
+                    </video>
+                    <img src="./images/image01.jpg" alt="no" />
+                </div>
+                <div class="video2 vid">
+                    <video autoplay muted loop>
+                        <source src="./videos/homework11.mp4" />
+                    </video>
+                    <img src="./images/image02.jpg" alt="no" />
+                </div>
+                <div class="video3 vid">
+                    <video autoplay muted loop>
+                        <source src="./videos/homework21.mp4" />
+                    </video>
+                    <img src="./images/image03.jpg" alt="no" />
+                </div>
+            </div>
+        </div>
+        <div class="page5">
+            <div class="page5-heading">
+                <h1>We operate on a simple philosophy:</h1>
+                <h1>Quality over quantity.</h1>
+            </div>
+            <div class="page5-main-content">
+                <h1>We partner with 5 clients each year.This</h1>
+                <h1>allows for intense focus on the transformation</h1>
+                <h1>and launch of your brand by our very best team,</h1>
+                <h1>which is the only team we have.</h1>
+            </div>
+            <div class="page5-blue-section">
+                <div class="color-wrapper">
+                    <video autoplay loop muted>
+                        <source src="./videos/blueorg.mp4" />
+                    </video>
+                    <svg class="abs tl:0 fit transform rotate:-90deg" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="19" stroke="#fff" stroke-width="0.05" fill="none"
+                            class="o:0.3 dasharray:302 dashoffset:604 (.in-view):dashoffset:400 (.in-view):tween:all,2.8s,easeOutSlow">
+                        </circle>
+                        <circle cx="50" cy="50" r="19" stroke="#fff" stroke-width="0.05" fill="none"
+                            class="dasharray:302 dashoffset:302 (.in-view):dashoffset:100 (.in-view):tween:all,2.8s,easeOutSlow">
+                        </circle>
+                    </svg>
+                    <svg class="abs tl:0 fit transform rotate:0 (.in-view):rotate:237deg (.in-view):tween:all,2.8s,easeOutSlow"
+                        viewBox="0 0 100 100">
+                        <circle cx="69" cy="50" r="0.5" fill="#fff"></circle>
+                    </svg>
+                    <div class="video-content">
+                        <h1>
+                            <div>
+                                <h1 class="nu">3</h1>
+                                <h1 class="nu">2</h1>
+                                <h1 class="nu">1</h1>
+                            </div>
+                            <p>seat</p>
+                        </h1>
+                        <h3>available for <span>203</span></h3>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+    <!-- gsap cdn  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
+        integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- gsap scroll trigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"
+        integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- locomotive cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+
+    <!-- custom script  -->
     <script src="script.js"></script>
 </body>
 
