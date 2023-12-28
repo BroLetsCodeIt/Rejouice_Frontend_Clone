@@ -35,6 +35,10 @@ body {
   background-color: #FAF8F3;
 }
 
+/* #main{
+    display: none;
+    opacity: 0;
+} */
 .page1 {
   width: 100%;
   height: 100vh;
@@ -314,7 +318,10 @@ body {
     height: 100%;
     /* background-color: red; */
     padding-top: 2vw;
+    
 }
+
+
 .page5 .page5-main-content h1{
     font-size: 4vw;
     font-weight: 400;
@@ -331,8 +338,28 @@ body {
     justify-content: center;
     /* background-color: red;   */
     padding-top: 7vw;
+    position: relative;
+}
+.page5 .page5-blue-section .cur{
+    position: absolute;
+    height:5vw;
+    width: 5vw;
+    top: 0;
+    left: 0;
+    transform: translate(-50% , -50%);
+    background-color: black;
+    border-radius: 50%;
+    z-index: 90;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
+.page5 .page5-blue-section .cur p{
+  color: white;
+  font-family: nb;
+}
 .page5 .page5-blue-section .color-wrapper{
     display: flex;
     align-items: center;
@@ -343,7 +370,9 @@ body {
     border-radius: 50%;
     border: 2vw  rgb(255, 255, 255);
     /* z-index: 3; */
+   
 }
+
 
 .page5 .page5-blue-section .color-wrapper video{
     width: 100%;
@@ -400,3 +429,72 @@ body {
   padding-bottom: 0.9vw;
 }
 
+.page6{
+    padding-top: 10vw;
+    width: 100%;
+    height: 100vh;
+}
+.page6 .page6-top {
+    display: flex;
+    border-bottom: 1px solid black;
+    width: 96%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page6 .page6-top h1{
+    font-family:rej ;
+    font-size: 9vw;
+}
+
+.page6 .page6-top h1:nth-child(2){
+    font-size:2vw;
+    font-weight: 200;
+}
+
+
+/* swiper code */
+
+.swiper {
+    width: 100%;
+    height: 70%;
+  }
+  .swiper-wrapper {
+    -webkit-transition-timing-function:linear!important; 
+    -o-transition-timing-function:linear!important;
+    transition-timing-function:linear!important; 
+  }
+.swiper-wrapper .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* background: #473b3b; */
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+ .swiper-wrapper .swiper-slide img {
+    /* display: block; */
+    width: 100%;
+    height: 100%;
+    /* height: fit-content; */
+    /* object-fit: cover;    */
+  }
+  
+
+  .loader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    z-index: 12;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+  }

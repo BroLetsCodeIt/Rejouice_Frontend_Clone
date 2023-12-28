@@ -131,7 +131,7 @@ function textAnimaterejouice() {
     ease: "smooth",
   });
 }
-textAnimaterejouice();
+// textAnimaterejouice();
 
 
 // page2 animation
@@ -164,3 +164,126 @@ const data = d.getFullYear();
 
 const datetext = document.querySelector('.video-content h3 span');
 datetext.innerHTML = data;
+
+
+
+function cursor2(){
+  const wrapper = document.querySelector('.page5 .page5-blue-section');
+  const cur = document.querySelector('.page5 .page5-blue-section .cur'); 
+  
+  wrapper.addEventListener('mousemove',(e) =>{
+        gsap.to(cur,{
+          x:e.x ,
+          y:e.y,
+          duration:1,
+          scale:1,
+          ease:'power2'
+        }) 
+  })
+  
+  wrapper.addEventListener('mousenter',() =>{
+      gsap.to(cur , {
+        scale:1,
+        duration:'1',
+        ease:'power2'
+      })
+  })
+  
+  wrapper.addEventListener('mouseleave',() =>{
+    gsap.to(cur , {
+      scale:0,
+      duration:'1',
+      ease:'power2'
+    })
+  })
+}
+
+cursor2()
+
+
+// swiper js code 
+// https://stackoverflow.com/questions/43801782/swiper-continous-loop-without-pause-between-sliding
+function infinitescroll(){
+  var swiper = new Swiper(".swiper", {
+    loop:true,
+    freeMode: true,
+    spaceBetween: 0,
+    grabCursor: true,
+    slidesPerView: 1,
+    loop:true,
+    autoplay: {
+      pauseOnMouseEnter: true,
+      delay: 0,
+      disableOnInteraction: false,
+    },
+    freeMode: true,
+    speed: 10000,
+    freeModeMomentum: false,
+    
+  });
+
+}
+
+infinitescroll();
+
+var maindiv = document.querySelector('#main');
+
+
+var t1 = gsap.timeline();
+
+t1.from('.loader',{
+  x:900,
+  duration:1,
+  stagger:0.1,
+  ease:'expo'
+})
+
+t1.from('.loader h3',{
+  x:100,
+  duration:2,
+  stagger:0.1,
+  ease:'expo'
+})
+
+ t1.to('.loader',{
+    x:900*2,
+    display:'none',
+    yoyo:true,
+    opacity:0,
+    duration:1,
+     ease:'power2',
+    onStart:textAnimaterejouice,
+     
+})
+
+
+
+// document.addEventListener('DOMContentLoaded',() =>{
+//   gsap.from('.loader', {
+//     x:900,
+//     duration:1,
+//     ease:'expo'
+//   })
+//   gsap.from('.loader h3',{
+//     x:100,
+//     stagger:0.1,
+//     duration:2,
+    
+//   })
+
+//   window.addEventListener('load', () =>{
+//     setTimeout(() => {
+//       maindiv.style.opacity = 1;
+//       maindiv.style.display = 'block';
+//       gsap.to('.loader',{
+//         x:900*2,
+//         display:'none',
+//         yoyo:true,
+//         duration:1,
+//         ease:'power2'
+//        })
+//      },3000)      
+//     });
+
+// })
+
